@@ -4,7 +4,7 @@ In this assignment, I have used ES6 to represent the class of deck and its funct
 
 Demo: https://shefaligupta.github.io/robots-and-pencil/demo
 
-Test: Open console to see test messages.
+Test Cases: Open console to see test messages (described in PASS/FAIL).
 
 Shuffle Cards:
 When the html file is opened, you will see a shuffle cards button and ordered cards.
