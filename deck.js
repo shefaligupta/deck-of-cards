@@ -1,36 +1,48 @@
-/*
-Class deck
-Properties: suit, rank and cards
- */
-
 'use strict';
 
+
+/**
+ * Class: Card
+ * Properties:
+ *   suit: String
+ *   rank: String
+ */
 class Card {
   constructor (suit,rank) {
     this.suit = suit;
     this.rank = rank;
   }
 
+  /**
+   * toString getter method
+   * @returns {String}
+   */
   get toString() {
     return this.suit + this.rank;
   }
 }
 
+/**
+ * Class: Deck
+ * Properties:
+ *   suits: array of strings
+ *   rank: array of strings
+ *   cards: array of Card objects
+ */
 class Deck {
   constructor() {
     this.suits = ['diamond', 'spade', 'club', 'heart'];
     this.rank = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-    this.cards = this.makeDeck();
+    this.cards = [];
+    this.populateDeck();
   }
 
-  makeDeck() {
-    let cards = [];
+  populateDeck() {
     for (let suit in this.suits) {
       for(let rank in this.rank) {
-        cards.push(new Card(this.suits[suit],this.rank[rank]));
+        this.cards.push(new Card(this.suits[suit],this.rank[rank]));
       }
     }
-    return cards;
   }
 
   shuffle() {
@@ -52,6 +64,10 @@ class Deck {
   }
 }
 
+/**
+ * Class: TestDeck
+ *
+ */
 class TestDeck {
 
   constructor() {
