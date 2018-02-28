@@ -14,3 +14,6 @@ How are cards shuffled: We find a random number from the deck of cards and swap 
 
 Deal Card:
 Deal card will always pick the top card of the stack. A card will be shown when you hit deal card button on the screen.
+
+Screenshot:
+![Screenshot](/screenshot/screen.png)
