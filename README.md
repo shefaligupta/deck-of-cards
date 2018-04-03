@@ -1,6 +1,14 @@
 # robots-and-pencil
 
-In this assignment, I have used ES6 to represent the class of deck and its function shuffle and deal.
+Given Problem Statement:
+
+Write a simple class in the language of your choice to represent a deck of cards with
+operations to shuffle the deck and to deal one card. While not a requirement today, a
+likely future enhancement is the need to deal all the cards in a deck.
+
+My Solution:
+
+I have used ES6 to represent the class of deck and its function shuffle and deal.
 
 Demo: https://shefaligupta.github.io/robots-and-pencil/demo
 
