@@ -10,7 +10,7 @@ My Solution:
 
 I have used ES6 to represent the class of deck and its function shuffle and deal.
 
-Demo: https://shefaligupta.github.io/robots-and-pencil/demo
+Demo: https://shefaligupta.github.io/deck-of-cards/demo/
 
 Test Cases: Open console to see test messages (described in PASS/FAIL).
 
