@@ -2,6 +2,9 @@
 
 import Deck from '../deck.js';
 
+/**
+ * This is a demo class written to consume deck.js
+ */
 class DemoApp {
     constructor() {
         this.deck = new Deck();
@@ -16,6 +19,9 @@ class DemoApp {
         this.setupListeners();
     }
 
+    /**
+     * This function loops through the cards in a deck and render them in a div
+     */
     render(){
         let deckDiv = document.getElementById('deckofcards');
         deckDiv.innerHTML = '';
@@ -25,6 +31,9 @@ class DemoApp {
         }
     }
 
+    /**
+     * binding the listeners to click
+     */
     setupListeners() {
         document.getElementById('shuffle').addEventListener('click', () => {
             this.shuffle();
@@ -34,6 +43,11 @@ class DemoApp {
         });
     }
 
+    /**
+     * Basically returns representation of a single card
+     * @param card
+     * @returns {HTMLDivElement}
+     */
     getCardUI(card) {
         let el = document.createElement('div');
         el.className = 'card';
@@ -41,6 +55,9 @@ class DemoApp {
         return el;
     }
 
+    /**
+     * This function shuffles the cards based on random number generation
+     */
     shuffle() {
         if(this.deck.cards.length > 0) {
             this.deck.shuffle();
@@ -52,6 +69,9 @@ class DemoApp {
         }
     }
 
+    /**
+     * This function will pop the last card of the deck
+     */
     deal() {
         let card = this.deck.deal(this.deck.cards);
         if(card !== 0) {
@@ -69,6 +89,9 @@ class DemoApp {
         }
     }
 
+    /**
+     * This function will display the dealt cards in order
+     */
     renderDealtCards(){
         let deckDiv = document.getElementById('donecards');
         deckDiv.innerHTML = '';
